@@ -9,3 +9,5 @@ NIM   : 2241720138 <BR>
 ![alt text](image-1.png) <br>
 ## Praktikum 3: Implementasi Text Section
 ![alt text](image-2.png) <br>
+## Praktikum 4: Implementasi Image Section
+![alt text](image-3.png) <br>

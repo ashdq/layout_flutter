@@ -24,14 +24,14 @@ class MyApp extends StatelessWidget {
                   padding:
                       const EdgeInsets.only(bottom: 8), // Padding at the bottom
                   child: const Text(
-                    'Wisata Gunung di Batu',
+                    'Santiago Bernabeu',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
                 const Text(
-                  'Batu, Malang, Indonesia',
+                  'Madrid, Spain',
                   style: TextStyle(
                     color: Colors
                         .grey, // Text color changed to grey for visual enhancement
@@ -99,7 +99,7 @@ class MyApp extends StatelessWidget {
         body: ListView(
           children: [
             Image.asset(
-              'images/antoni.jpg',
+              'images/bernabeu.jpg',
               width: 600,
               height: 240,
               fit: BoxFit.cover,
