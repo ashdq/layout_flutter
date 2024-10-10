@@ -1,16 +1,11 @@
-# flutter_application_1
+Nama  : Fatriya Ibnu Ash shidiqqi <br>
+Kelas : TI 3B <br>
+NIM   : 2241720138 <BR> 
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# 06 | Layout dan Navigasi
+## Praktikum 1: Membangun Layout di Flutter
+![alt text](image.png) <br>
+## Praktikum 2: Implementasi button row
+![alt text](image-1.png) <br>
+## Praktikum 3: Implementasi Text Section
+![alt text](image-2.png) <br>

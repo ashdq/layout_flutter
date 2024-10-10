@@ -49,14 +49,65 @@ class MyApp extends StatelessWidget {
       ),
     );
 
+    Column _buildButtonColumn(Color color, IconData icon, String label) {
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(icon, color: color),
+          Container(
+            margin: const EdgeInsets.only(top: 8),
+            child: Text(
+              label,
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w400,
+                color: color,
+              ),
+            ),
+          ),
+        ],
+      );
+    }
+
+    Color color = Theme.of(context).primaryColor;
+
+    Widget buttonSection = Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        _buildButtonColumn(color, Icons.call, 'CALL'),
+        _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
+        _buildButtonColumn(color, Icons.share, 'SHARE'),
+      ],
+    );
+
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Santiago Bernabéu Stadium is a retractable roof football stadium in Madrid, Spain. With a seating capacity of 78,297, the stadium has the second-largest seating capacity for a football stadium in Spain. It has been the home stadium of Real Madrid since its completion in 1947.\n\n'
+        'Fatriya Ibnu Ash shidiqqi 2241720138',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Fatriya Ibnu Ash shidiqqi 2241720138',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Flutter layout demo'),
         ),
-        body: Center(
-          child: titleSection, // Displaying the titleSection widget
+        body: ListView(
+          children: [
+            Image.asset(
+              'images/antoni.jpg',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
+            titleSection,
+            buttonSection,
+            textSection,
+          ],
         ),
       ),
     );
