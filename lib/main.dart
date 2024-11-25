@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
               ],
             ),
           ),
-          Icon(
+          const Icon(
             Icons.star,
             color: Colors.red,
           ),
@@ -49,7 +49,7 @@ class MyApp extends StatelessWidget {
       ),
     );
 
-    Column _buildButtonColumn(Color color, IconData icon, String label) {
+    Column buildButtonColumn(Color color, IconData icon, String label) {
       return Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -75,9 +75,9 @@ class MyApp extends StatelessWidget {
     Widget buttonSection = Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        _buildButtonColumn(color, Icons.call, 'CALL'),
-        _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
-        _buildButtonColumn(color, Icons.share, 'SHARE'),
+        buildButtonColumn(color, Icons.call, 'CALL'),
+        buildButtonColumn(color, Icons.near_me, 'ROUTE'),
+        buildButtonColumn(color, Icons.share, 'SHARE'),
       ],
     );
 
